@@ -5,38 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-image: url('imagen.jpg');">
     <h2>Rellena los campos para solicitar presupuesto</h2>
     <form>
         <fieldset>
             <fieldset>
-                Datos Personales
-                Nombre:
-                Apellidos:
-                Tlf:
-                E-mail:
-                Edad:
-                Dirección:
-                Sexo:
-
+                <legend>Datos Personales</legend>
+                Nombre: <input type="text"><br>
+                Apellidos: <input type="text"><br>
+                Tlf: <input type="tel"><br>
+                E-mail: <input type="email"><br>
+                Edad: <input type="number" placeholder="18"><br>
+                Dirección: <br><textarea rows="2" cols="100">Indica tu dirección</textarea><br>
+                Sexo: <br>
+                <label>
+                    <input type="radio" name="genero" checked="checked"> Varon<br>
+                </label>
+                <label>
+                    <input type="radio" name="genero"> Hembra<br>
+                </label>
             </fieldset>
+            <br>
             <fieldset>
-                Servicio que solicitar
-                Servicio:
-                Mantenimiento Integral
-                Asesoramiento Técnocp
-                Mantenimiento preventivo
-                Realización de Backups
-                NºEquipos:
-                Fecha Petició<nav>
-                    <br>
-
-                Observaciones:
+                <legend>Servicio que solicita</legend>
+                Servicio:<br>
+                <input type="radio" name="servicio" checked="checked"> Mantenimiento Integral<br>
+                <input type="radio" name="servicio"> Asesoramiento Técnocp<br>
+                <input type="radio" name="servicio"> Mantenimiento preventivo<br>
+                <input type="radio" name="servicio"> Realización de Backups<br>
+                NºEquipos: <input type="number" placeholder="50"><br>
+                Fecha Petición: <input type="date"><br><br>
+                Observaciones:<br>
+                <textarea rows="2" cols="80">Añade información adicional para tenerla en cuenta a la hora de calcular tu presupuesto</textarea>
 
             </fieldset>
-
-            SOLICITAR PRESUPUESTO
-            BORRAR CAMPOS
+            <br><br>
+            <input type="submit" value="SOLICITAR 
+PRESUPUESTO">
+            <input type="reset" value="BORRAR 
+CAMPOS">
+            
         </fieldset>
     </form>
 </body>
