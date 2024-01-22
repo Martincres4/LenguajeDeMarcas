@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Presupuesto</title>
+</head>
+<body style="background-image: url('imagenFon.jpg');">
+    <h2>Rellena los campos para solicitar presupuesto</h2>
+    <form>
+        <table>
+            <tr><td>
+                <fieldset>
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        Nombre: <input type="text" size="40"><br>
+                        Apellidos: <input type="text"><br>
+                        Tlf: <input type="tel"><br>
+                        E-mail: <input type="email"><br>
+                        Edad: <input type="number"><br>
+                        Dirección:<br>
+                        <textarea rows="2" cols="100">Indica tu dirección</textarea><br>
+                        Sexo:<br>
+                        <input type="radio" name="sex" checked> Varón<br>
+                        <input type="radio" name="sex"> Hembra<br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Servicio que solicita</legend>
+                        Servicio:<br>
+                        <input type="radio" name="Servicio" checked>Mantenimiento Integral<br>
+                        <input type="radio" name="Servicio">Asesoramiento Técnico<br>
+                        <input type="radio" name="Servicio">Mantenimiento preventivo<br>
+                        <input type="radio" name="Servicio">Realización de Backups<br>
+                    Nº Equipos: <input type="number" placeholder="50" min="10" max="51"><br>
+                    Fecha Petición: <input type="date"><br><br>
+                    Observaciones:<br>
+                    <textarea>Añade información adicional para tenerla en cuenta a la hora de calcular tu presupuesto</textarea>
+                    </fieldset>
+                    <button type="submit">SOLICITAR<br>PRESUPUESTO</button>
+                    <button type="reset">BORRAR<br>CAMPOS</button>
+                </fieldset>
+            </td></tr>
+    </table>
+    </form>
+    
+</body>
+</html>

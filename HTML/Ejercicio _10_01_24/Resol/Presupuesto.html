@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Petición Presupuesto</title>
+	</head>
+
+	<body style="background-image: url('imagen.jpg');">
+		
+		<a name="Pr"></a>
+
+		<h2 id="TFormPres"> Rellena los campos para solicitar presupuesto</h2>
+		<table>
+		<tr><td id="Form"><form action="gest1.html" method="post">
+		  <fieldset>
+			<fieldset>
+			  <legend>Datos Personales</legend>
+				Nombre: <input type="text" id="Nomb" size=40><br>
+				Apellidos: <input type="text" id="Ape" size=40><br>
+				Tlf: <input type="text" id="Tlf" size=9><br>
+				E-mail: <input type="email" id="Correo" size=60><br>
+				Edad: <input name="Edad" type="number" min=18 max=110 value=18><br>
+				Dirección: <br><textarea rows=2 cols=90>Indica tu dirección</textarea><br>
+				Sexo:<br>
+				     <input type="radio" name="sx" checked> Varón <br>
+				     <input type="radio" name="sx"> Hembra <br>
+				
+			   </fieldset><br>
+
+			   <fieldset>
+				<legend>Servicio que solicita</legend>
+
+				Servicio:<br>
+				     <input type="radio" name="serv" checked> Mantenimiento Integral <br>
+				     <input type="radio" name="serv"> Asesoramiento Técnico <br>
+				     <input type="radio" name="serv"> Mantenimiento preventivo <br>
+				     <input type="radio" name="serv"> Realización de Backups <br>     
+
+				Nº Equipos: <input type="number" value="50" min="1" max="350"><br>
+
+				Fecha Petición:
+				<input type="date"><br><br>
+
+				Observaciones:<br>
+				<textarea rows=2 cols=80>Añade información adicional para tenerla en cuenta a la hora de calcular tu presupuesto</textarea>
+
+			   </fieldset><br><br>
+				
+				
+				<button id="OK" type="submit">SOLICITAR<br>PRESUPUESTO</button>
+				<button id="KO" type="reset">BORRAR<br>CAMPOS</button>
+		   </fieldset>
+		  </form></td></tr>
+		</table>
+
+
+	</body>
+</html>
+
