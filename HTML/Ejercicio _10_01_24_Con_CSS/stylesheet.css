@@ -1,0 +1,65 @@
+body{
+background-image: url('imagen.jpg');
+}
+
+.centrado{  
+    align: center; 
+}
+
+.textoCentrado{
+    text-align: center;
+}
+
+.verde{
+    color: #42763D;
+}
+
+.azulGaramond{
+    color: royalblue;
+    font-family: garamond;
+}
+
+.verdeCentrado{
+    color: #42763D;
+    text-align: center;
+}
+
+.parrafoCandara{
+    font-family: candara;
+}
+
+.colorFondoCabeza{
+    background-color:#A3E854;
+}
+
+.colorFondoCuerpo{
+    background-color:#0FF1D2;
+}
+
+/*Presupuesto*/
+#Nomb{
+    size: 40;
+}
+#Ape{
+    size: 40;
+}
+#Tlf{
+    size: 9;
+}
+#Correo{
+    size: 60;
+}
+
+/*Registro Cliente*/
+#Nomb2{
+    size: 40;
+}
+#Ape2{
+    size: 40;
+}
+#Tlf2{
+    size: 9;
+}
+#Correo2{
+    size: 60;
+}
