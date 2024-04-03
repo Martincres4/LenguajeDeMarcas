@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <h2>SOLICITUD DE MANTENIMIENTO</h2>
+    <form>
+        <fieldset>
+            <fieldset id="f1">
+                <legend>Datos Personales</legend>
+                Nombre<input type="text"><br>
+                Apellidos: <input type="text"><br>
+                Tlf: <input type="text"><br>
+                E-mail: <input type="text"><br>
+                Dirección: <br>
+                <textarea rows="2" placeholder="Indica tu dirección"></textarea><br>
+                Sexo:<br>
+                <input type="radio" name="sexo" checked>Varon<br>
+                <input type="radio" name="sexo">Hembra<br>
+            </fieldset>
+            <fieldset style="background-color: #1AE8DF;">
+                <legend>Tareas de mantenimiento a realizar</legend>
+                Servicio<br>
+                <input type="checkbox" name="servicios" checked>Bateria<br>
+                <input type="checkbox" name="servicios">Luces<br>
+                <input type="checkbox" name="servicios">Filtros<br>
+                <input type="checkbox" name="servicios">Frenos<br>
+                <input type="checkbox" name="servicios">Neumáticos<br>
+                <input type="checkbox" name="servicios">Amortiguadores<br>
+                <input type="checkbox" name="servicios">Correa de distribución<br> 
+                <input type="checkbox" name="servicios">Lubricante<br>
+                <input type="checkbox" name="servicios">Refrigerante Limpiaparabrisas<br>
+                <input type="checkbox" name="servicios">Sistema de escape y catalizadores<br><br>
+
+                Fecha Deseada para realizar el mantenimiento: <input type="date"><br><br>       
+
+                Obseervaciones:<br>
+                <textarea rows="2" placeholder="Añade información adicional"></textarea>
+
+            
+            </fieldset>
+            <button>Pedir Mnatenimiento</button>
+            <button type="reset">FIELD<br>RESET</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
