@@ -1,0 +1,7 @@
+<!ELEMENT disco (cancion+)>
+<!ELEMENT cancion (autor*, interprete, anno, duraccion?)>
+<!ATTLIST cancion nombre CDATA #REQUIRED>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT interprete (#PCDATA)>
+<!ELEMENT anno (#PCDATA)>
+<!ELEMENT duraccion (#PCDATA)>

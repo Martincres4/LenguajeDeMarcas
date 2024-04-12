@@ -1,0 +1,26 @@
+<?xml version ="1.0" encoding ="UTF-8"?>
+<!DOCTYPE disco SYSTEM "Canciones.dtd">
+<disco>
+    <cancion nombre="The Razors Edge">
+        <autor>Bon Scott</autor>
+        <autor>Angus Young</autor>
+        <interprete>Bon Scott</interprete>
+        <anno>1990</anno>
+        <duraccion>4:22</duraccion>
+    </cancion>
+    <cancion nombre="Thunderstruck">
+        <autor>Bon Scott</autor>
+        <interprete>Angus Young</interprete>
+        <anno>1990</anno>
+    </cancion>
+    <cancion nombre="Fire Your Guns">
+        <interprete>Bon Scott</interprete>
+        <anno>1990</anno>
+        <duraccion>3:53</duraccion>
+    </cancion>
+    <cancion nombre="Moneytalks">
+        <autor>Angus Young</autor>
+        <interprete>Bon Scott</interprete>
+        <anno>1990</anno>
+    </cancion>
+</disco>
