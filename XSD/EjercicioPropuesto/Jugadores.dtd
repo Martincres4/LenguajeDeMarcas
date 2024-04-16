@@ -1,0 +1,9 @@
+<!ELEMENT Jugadores (Jugador+)>
+<!ELEMENT Jugador (Nombre, Deporte, Demarcación, Dorsal, (FechaNaciminto|Edad))>
+<!ATTLIST Jugador tJugador ID #REQUIRED>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Deporte (#PCDATA)>
+<!ELEMENT Demarcación (#PCDATA)>
+<!ELEMENT Dorsal (#PCDATA)>
+<!ELEMENT Edad (#PCDATA)>
+<!ELEMENT FechaNacimiento (#PCDATA)>
