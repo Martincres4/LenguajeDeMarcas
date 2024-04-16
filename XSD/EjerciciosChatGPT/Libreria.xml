@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book id="001">
+        <title>The Great Gatsby</title>
+        <author name="F. Scott Fitzgerald" nationality="American"/>
+        <genre>Fiction</genre>
+        <price currency="USD">12.99</price>
+        <publication_date>1925-04-10</publication_date>
+        <description>A novel by F. Scott Fitzgerald set in the Jazz Age.</description>
+    </book>
+    <book id="002">
+        <title>To Kill a Mockingbird</title>
+        <author name="Harper Lee" nationality="American"/>
+        <genre>Fiction</genre>
+        <price currency="USD">10.50</price>
+        <publication_date>1960-07-11</publication_date>
+        <description>A classic of modern American literature.</description>
+    </book>
+</library>

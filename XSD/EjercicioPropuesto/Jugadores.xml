@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Jugadores>
+    <Jugador tJugador="Algo">
+        <Nombre>Carlos</Nombre>
+        <Deporte>Baloncesto</Deporte>
+        <Demarcación>Pibot</Demarcación>
+        <Dorsal>13</Dorsal>
+        <Edad>16</Edad>
+    </Jugador>
+    <Jugador tJugador="Algo2">
+        <Nombre>Carlos2</Nombre>
+        <Deporte>Baloncesto2</Deporte>
+        <Demarcación>Alero</Demarcación>
+        <Dorsal>3</Dorsal>
+        <FechaNacimiento>11/7/2001</FechaNacimiento>
+    </Jugador>
+    <Jugador tJugador="Algo3">
+        <Nombre>Carlos3</Nombre>
+        <Deporte>Baloncesto3</Deporte>
+        <Demarcación>Pibot</Demarcación>
+        <Dorsal>11</Dorsal>
+        <Edad>13</Edad>
+    </Jugador>
+</Jugadores>
