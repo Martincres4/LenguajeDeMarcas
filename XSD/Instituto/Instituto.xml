@@ -6,39 +6,39 @@ tEdad (tipo base PositiveInteger) >=18
 tDNI (tipo base String) patron -> 8 dígitos de 0 - 9, seguidos - y letra mayúscula A-Z
 Alumno(NombreAlum(String), Apellidos(String), Ciudad(String- Puede aparecer o no)
  atributo obligatorio -> NIA tipo tNIA(tipo base String, patron 8 dígitos de 0-9))-->
-<?xml version="1.0" encoding="UTF-8"?>
-<Instituto>
-    <Profesores>
-        <Profesor DNI="78457412E" type="tDNI">
-            <NombreProf>Jesús</NombreProf>
-            <Edad>45</Edad>
-            <Materia>Inglés</Materia>
-        </Profesor>
-        <Profesor DNI="47884211P" type="tDNI">
-            <NombreProf>Grasta</NombreProf>
-            <Edad>55</Edad>
-            <Materia>Petanca</Materia>
-        </Profesor>
-        <Profesor DNI="78450412E" type="tDNI">
-            <NombreProf>Alberto</NombreProf>
-            <Edad>41</Edad>
-            <Materia>Reciclaje</Materia>
-        </Profesor>
-    </Profesores>
-    <Alumnos>
-        <Alumno NIA="47556930A" type="tNIA">
-            <NombreAlum>Carlos</NombreAlum>
-            <Apellidos>Jimenez Albarez</Apellidos>
-            <Ciudad>Madrid</Ciudad>
-        </Alumno>
-        <Alumno NIA="41556930R" type="tNIA">
-            <NombreAlum>Michael</NombreAlum>
-            <Apellidos>Marquez Alonso</Apellidos>
-        </Alumno>
-        <Alumno NIA="47546930T" type="tNIA">
-            <NombreAlum>Oliver</NombreAlum>
-            <Apellidos>Winckman Verxco</Apellidos>
-        </Alumno>
-    </Alumnos>
-    <Director>Yandel</Director>
-</Instituto>
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ <Instituto>
+     <Profesores>
+         <Profesor DNI="78457412E">
+             <NombreProf>Jesús</NombreProf>
+             <Edad>45</Edad>
+             <Materia>Inglés</Materia>
+         </Profesor>
+         <Profesor DNI="47884211P">
+             <NombreProf>Grasta</NombreProf>
+             <Edad>55</Edad>
+             <Materia>Petanca</Materia>
+         </Profesor>
+         <Profesor DNI="78450412E">
+             <NombreProf>Alberto</NombreProf>
+             <Edad>41</Edad>
+             <Materia>Reciclaje</Materia>
+         </Profesor>
+     </Profesores>
+     <Alumnos>
+         <Alumno NIA="47556930A">
+             <NombreAlum>Carlos</NombreAlum>
+             <Apellidos>Jimenez Albarez</Apellidos>
+             <Ciudad>Madrid</Ciudad>
+         </Alumno>
+         <Alumno NIA="41556930R">
+             <NombreAlum>Michael</NombreAlum>
+             <Apellidos>Marquez Alonso</Apellidos>
+         </Alumno>
+         <Alumno NIA="47546930T">
+             <NombreAlum>Oliver</NombreAlum>
+             <Apellidos>Winckman Verxco</Apellidos>
+         </Alumno>
+     </Alumnos>
+     <Director>Yandel</Director>
+ </Instituto>

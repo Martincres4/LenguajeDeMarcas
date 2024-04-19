@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Instituto">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Profesores" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Profesor" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="NombreProf" type="xs:string"/>
+                                        <xs:element name="Edad" type="tEdad"/>
+                                        <xs:element name="Materia" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="DNI" type="tDNI" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Alumnos" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Alumno" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="NombreAlum" type="xs:string"/>
+                                        <xs:element name="Apellidos" type="xs:string"/>
+                                        <xs:element name="Ciudad" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="DNI" type="tNIA" use="required">
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Director" minOccurs="1" maxOccurs="1" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="tDNI">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}-[A-Z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tEdad">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="18"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tNIA">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
