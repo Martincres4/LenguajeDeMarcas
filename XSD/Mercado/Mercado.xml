@@ -12,7 +12,7 @@
         </Leche>    
     </Productos>
     <Productos>
-        <Pan Codp="741">
+        <Pan Codp1="741">
             <TipoMasa>Con semillas</TipoMasa>
         </Pan>    
     </Productos>
@@ -23,7 +23,7 @@
         </Carne>    
     </Productos>
     <Productos>
-        <Pescado Codp="741">
+        <Pescado Codp2="741">
             <NumPiezas>3</NumPiezas>
             <NomPez>Lenguao</NomPez>
         </Pescado>    

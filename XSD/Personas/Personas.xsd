@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Personas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Hombres" type="tHombres"/>
+                <xs:element name="Mujeres" type="tMujeres"/>
+            </xs:sequence>
+        </xs:complexType>       
+    </xs:element>
+
+    <xs:element name="tHombres">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Hombre" minOccurs="1" maxOccurs="unbounded" type="tHombre"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="tMujeres">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Mujer" minOccurs="1" maxOccurs="unbounded" type="tMujer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="tHombre">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Edad" type="xs:positiveInteger"/>
+                <xs:element name="FNacimiento" type="xs:date" minOccurs="0"/>
+                <xs:element name="Profesion" type="xs:string"/>
+                <xs:element name="Estatura" type="tEstatura"/>
+                <xs:element name="Peso" type="tPeso"/>
+                <xs:element name="Sueldo" type="tSueldo"/>
+                <xs:element name="ECivil" type="tECivil"/>
+            </xs:sequence>
+            <xs:attribute name="Nombre" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="tMujer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Edad" type="xs:positiveInteger"/>
+                <xs:element name="FNacimiento" type="xs:date" minOccurs="0"/>
+                <xs:element name="Profesion" type="xs:string"/>
+                <xs:element name="Estatura" type="tEstatura"/>
+                <xs:element name="Peso" type="tPeso"/>
+                <xs:element name="Sueldo" type="tSueldo"/>
+                <xs:element name="ECivil" type="tECivil"/>
+            </xs:sequence>
+            <xs:attribute name="Nombre" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="tEstatura" type="xs:string">
+        <xs:complexType></xs:complexType>
+    </xs:element>
+</xs:schema>

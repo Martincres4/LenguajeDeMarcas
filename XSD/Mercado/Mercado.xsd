@@ -9,37 +9,36 @@
                             <xs:element name="Leche">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="Marca" use="optional" type="xs:string"/>
-                                        <xs:element name="Tipo" type="xs:string"/>
+                                        <xs:element name="Marca" minOccurs="0" type="xs:string" />
+                                        <xs:element name="Tipo" type="xs:string" />
                                     </xs:sequence>
-                                    <xs:attribute name="Codl" type="xs:string" use="required"/>
+                                    <xs:attribute name="Codl" type="xs:string" use="required" />
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="Pan">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="Marca" use="optional" type="xs:string"/>
-                                        <xs:element name="Tipo" type="xs:string"/>
+                                        <xs:element name="TipoMasa" type="xs:string" />
                                     </xs:sequence>
-                                    <xs:attribute name="Codl" type="xs:string" use="required"/>
+                                    <xs:attribute name="Codp1" type="xs:string" use="required" />
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="Carne">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="Marca" use="optional" type="xs:string"/>
-                                        <xs:element name="Tipo" type="xs:string"/>
+                                        <xs:element name="Peso" type="xs:string" />
+                                        <xs:element name="Animal" type="xs:string" />
                                     </xs:sequence>
-                                    <xs:attribute name="Codl" type="xs:string" use="required"/>
+                                    <xs:attribute name="Codc" type="xs:string" use="required" />
                                 </xs:complexType>
                             </xs:element>
                             <xs:element name="Pescado">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="Marca" use="optional" type="xs:string"/>
-                                        <xs:element name="Tipo" type="xs:string"/>
+                                        <xs:element name="NumPiezas" type="xs:string" />
+                                        <xs:element name="NomPez" type="xs:string" />
                                     </xs:sequence>
-                                    <xs:attribute name="Codl" type="xs:string" use="required"/>
+                                    <xs:attribute name="Codp2" type="xs:string" use="required" />
                                 </xs:complexType>
                             </xs:element>
 
@@ -48,6 +47,6 @@
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
-        
+
     </xs:element>
 </xs:schema>
