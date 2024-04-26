@@ -9,51 +9,73 @@
         </xs:complexType>       
     </xs:element>
 
-    <xs:element name="tHombres">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Hombre" minOccurs="1" maxOccurs="unbounded" type="tHombre"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+    <xs:complexType name="tHombres">
+        <xs:sequence>
+            <xs:element name="Hombre" minOccurs="1" maxOccurs="unbounded" type="tHombre"/>
+        </xs:sequence>
+    </xs:complexType>
 
-    <xs:element name="tMujeres">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Mujer" minOccurs="1" maxOccurs="unbounded" type="tMujer"/>
-            </xs:sequence>
-        </xs:complexType>
-    </xs:element>
+    <xs:complexType name="tMujeres">
+        <xs:sequence>
+            <xs:element name="Mujer" minOccurs="1" maxOccurs="unbounded" type="tMujer"/>
+        </xs:sequence>
+    </xs:complexType>
 
-    <xs:element name="tHombre">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Edad" type="xs:positiveInteger"/>
-                <xs:element name="FNacimiento" type="xs:date" minOccurs="0"/>
-                <xs:element name="Profesion" type="xs:string"/>
-                <xs:element name="Estatura" type="tEstatura"/>
-                <xs:element name="Peso" type="tPeso"/>
-                <xs:element name="Sueldo" type="tSueldo"/>
-                <xs:element name="ECivil" type="tECivil"/>
-            </xs:sequence>
-            <xs:attribute name="Nombre" type="xs:string" use="required"/>
-        </xs:complexType>
-    </xs:element>
-    <xs:element name="tMujer">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="Edad" type="xs:positiveInteger"/>
-                <xs:element name="FNacimiento" type="xs:date" minOccurs="0"/>
-                <xs:element name="Profesion" type="xs:string"/>
-                <xs:element name="Estatura" type="tEstatura"/>
-                <xs:element name="Peso" type="tPeso"/>
-                <xs:element name="Sueldo" type="tSueldo"/>
-                <xs:element name="ECivil" type="tECivil"/>
-            </xs:sequence>
-            <xs:attribute name="Nombre" type="xs:string" use="required"/>
-        </xs:complexType>
-    </xs:element>
-    <xs:element name="tEstatura" type="xs:string">
-        <xs:complexType></xs:complexType>
-    </xs:element>
+    <xs:complexType name="tHombre">
+        <xs:sequence>
+            <xs:element name="Edad" type="xs:positiveInteger"/>
+            <xs:element name="FNacimiento" type="xs:date" minOccurs="0"/>
+            <xs:element name="Profesion" type="xs:string"/>
+            <xs:element name="Estatura" type="tEstatura"/>
+            <xs:element name="Peso" type="tPeso"/>
+            <xs:element name="Sueldo" type="tSueldo"/>
+            <xs:element name="ECivil" type="tECivil"/>
+        </xs:sequence>
+        <xs:attribute name="Nombre" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="tMujer">
+        <xs:sequence>
+            <xs:element name="Edad" type="xs:positiveInteger"/>
+            <xs:element name="FNacimiento" type="xs:date" minOccurs="0"/>
+            <xs:element name="Profesion" type="xs:string"/>
+            <xs:element name="Estatura" type="tEstatura"/>
+            <xs:element name="Peso" type="tPeso"/>
+            <xs:element name="Sueldo" type="tSueldo"/>
+            <xs:element name="ECivil" type="tECivil"/>
+        </xs:sequence>
+        <xs:attribute name="Nombre" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tEstatura">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[01]{1},[0-9]{2} m"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tPeso">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{2,3}.[0-9]{3} Kg"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tSueldo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{4}€/mes"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tECivil" final="restriction" >
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Soltero" />
+            <xs:enumeration value="Soltera" />
+            <xs:enumeration value="Casado" />
+            <xs:enumeration value="Casada" />
+            <xs:enumeration value="Divorciado" />
+            <xs:enumeration value="Divorciada" />
+            <xs:enumeration value="Viudo" />
+            <xs:enumeration value="Viuda" />
+        </xs:restriction>
+    </xs:simpleType>
+
 </xs:schema>

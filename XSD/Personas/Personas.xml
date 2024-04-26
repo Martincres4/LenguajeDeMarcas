@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Personas>
+<Personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Personas.xsd">
     <Hombres>
-        <Hombre>
-
+        <Hombre Nombre="Carlos">
+            <Edad>24</Edad>
+            <FNacimiento>2000-01-04</FNacimiento>
+            <Profesion>Maestro</Profesion>
+            <Estatura>1,88 m</Estatura>
+            <Peso>74.540 Kg</Peso>
+            <Sueldo>1123€/mes</Sueldo>
+            <ECivil>Soltero</ECivil>
         </Hombre>
-        <Hombre>
-
+        <Hombre Nombre="Lucas">
+            <Edad>28</Edad>
+            <Profesion>Catador</Profesion>
+            <Estatura>1,85 m</Estatura>
+            <Peso>89.540 Kg</Peso>
+            <Sueldo>1323€/mes</Sueldo>
+            <ECivil>Divorciado</ECivil>
         </Hombre>
-        <Hombre>
-
+        <Hombre Nombre="Hush">
+            <Edad>34</Edad>
+            <Profesion>Futbolista</Profesion>
+            <Estatura>1,84 m</Estatura>
+            <Peso>84.540 Kg</Peso>
+            <Sueldo>2023€/mes</Sueldo>
+            <ECivil>Casado</ECivil>
         </Hombre>
     </Hombres>
     <Mujeres>
-        <Mujer>
-            
+        <Mujer Nombre="Carla">
+            <Edad>27</Edad>
+            <Profesion>Bióloga</Profesion>
+            <Estatura>1,50 m</Estatura>
+            <Peso>54.540 Kg</Peso>
+            <Sueldo>2123€/mes</Sueldo>
+            <ECivil>Viuda</ECivil>          
         </Mujer>
     </Mujeres>
 </Personas>
