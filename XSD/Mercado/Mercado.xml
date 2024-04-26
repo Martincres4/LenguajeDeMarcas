@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mercado>
+    <Productos>
+        <Leche Codl="744">
+            <Marca>Pascual</Marca>
+            <Tipo>Semidesnatada</Tipo>
+        </Leche>
+    </Productos>
+    <Productos>
+        <Leche Codl="741">
+            <Tipo>Desnatada</Tipo>
+        </Leche>    
+    </Productos>
+    <Productos>
+        <Pan Codp="741">
+            <TipoMasa>Con semillas</TipoMasa>
+        </Pan>    
+    </Productos>
+    <Productos>
+        <Carne Codc="741">
+            <Peso>5</Peso>
+            <Animal>Vaca</Animal>
+        </Carne>    
+    </Productos>
+    <Productos>
+        <Pescado Codp="741">
+            <NumPiezas>3</NumPiezas>
+            <NomPez>Lenguao</NomPez>
+        </Pescado>    
+    </Productos>
+</Mercado>

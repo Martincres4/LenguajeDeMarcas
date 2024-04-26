@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Mercado">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Productos" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:choice>
+                            <xs:element name="Leche">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Marca" use="optional" type="xs:string"/>
+                                        <xs:element name="Tipo" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="Codl" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Pan">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Marca" use="optional" type="xs:string"/>
+                                        <xs:element name="Tipo" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="Codl" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Carne">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Marca" use="optional" type="xs:string"/>
+                                        <xs:element name="Tipo" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="Codl" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Pescado">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Marca" use="optional" type="xs:string"/>
+                                        <xs:element name="Tipo" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="Codl" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        
+    </xs:element>
+</xs:schema>
