@@ -1,0 +1,24 @@
+﻿<?xml version ="1.0" encoding ="UTF-8"?>
+<Jugadores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSDJugador.xsd">
+ <Jugador>
+	<Nombre Apodo="Patapalo">Juan</Nombre>
+	<Deporte>Futbol</Deporte>
+	<Demarcacion>Defensa</Demarcacion>
+	<Dorsal>4</Dorsal>
+	<FechaNacimiento>12-07-94</FechaNacimiento>
+</Jugador>
+<Jugador>
+	<Nombre>Jorge</Nombre>
+	<Deporte>Baloncesto</Deporte>
+	<Demarcacion>Alero</Demarcacion>
+	<Dorsal>14</Dorsal>
+  	<Edad>24</Edad>
+</Jugador>
+<Jugador>
+	<Nombre Apodo="La Gata">Ana</Nombre>
+	<Deporte>Balonmano</Deporte>
+	<Demarcacion>Portera</Demarcacion>
+	<Dorsal>1</Dorsal>
+	<AnoNac>1992</AnoNac>
+</Jugador>
+</Jugadores>
