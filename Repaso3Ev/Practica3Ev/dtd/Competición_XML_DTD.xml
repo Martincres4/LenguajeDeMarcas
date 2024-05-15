@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<FormulaX>
+  <Escuderias>
+	<Escuderia NomEscu="Rayo Veloz">
+		<JefeEscuderia Antiguedad="2 ano">Carlos Escobar Azalea</JefeEscuderia>
+		<Mecanico>Sergio Pinilla Lima</Mecanico>
+		<Mecanico>David Zaragoza Luarca</Mecanico>
+		<Piloto Titular="Si">Guillermo Formoza Carrillo</Piloto>
+		<Piloto Titular="No">Nuria Calvo Sopera</Piloto>
+		<Coche>
+			<VelocidadMax>357.432 km/h </VelocidadMax>
+			<Aceleracion>14,78 m/s2 </Aceleracion>
+		</Coche>
+		<FechaFundacion>2020-11-13</FechaFundacion>	
+	</Escuderia>
+	<Escuderia NomEscu="FSpeed">
+		<JefeEscuderia Antiguedad="13 ano">John Fouler Smith</JefeEscuderia>
+		<Mecanico>Lilian Welcome Ferdinand</Mecanico>
+		<Piloto Titular="No">Charles Chester Durnet</Piloto>
+		<Piloto Titular="Si">Charlotte Gyle Clarence</Piloto>
+		<Coche>
+			<VelocidadMax>361.01 km/h </VelocidadMax>	
+		</Coche>
+		<AnoFundacion>2001</AnoFundacion>
+	</Escuderia>
+	<Escuderia NomEscu="Hypercars">
+		<JefeEscuderia Antiguedad="5 ano">Ricard Perkin Gringou</JefeEscuderia>
+		<Mecanico>Hasen Vickers Traore</Mecanico>
+		<Piloto Titular="Si">Frederick Lemarc Anglue</Piloto>
+		<Coche>
+			<VelocidadMax>365.689 km/h </VelocidadMax>
+			<Aceleracion>1545,00 cm/s2 </Aceleracion>	
+		</Coche>
+		<FechaFundacion>2014-07-05</FechaFundacion>
+	</Escuderia>
+	<Escuderia NomEscu="FAutomobile">
+		<JefeEscuderia Antiguedad="8 ano">Francesco Bianchi Zanella</JefeEscuderia>
+		<Mecanico>Paolo Mecanio Baresi</Mecanico>
+		<Mecanico>Fabio Napolitano Parotta</Mecanico>
+		<Piloto Titular="Si">Fabrizio Pesotto Fiorino</Piloto>
+		<Coche>
+			<VelocidadMax>359.721 km/h </VelocidadMax>
+		</Coche>
+		<FechaFundacion>2011-09-14</FechaFundacion>
+	</Escuderia>
+   </Escuderias>
+
+</FormulaX>

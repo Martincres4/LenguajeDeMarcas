@@ -1,0 +1,15 @@
+<!ELEMENT FormulaX (Escuderias+)>
+<!ELEMENT Escuderias (Escuderia+)>
+<!ELEMENT Escuderia (JefeEscuderia, Mecanico+, Piloto+, Coche, (FechaFundacion | AnoFundacion))>
+<!ATTLIST Escuderia NomEscu ID #REQUIRED>
+<!ELEMENT JefeEscuderia (#PCDATA)>
+<!ATTLIST JefeEscuderia Antiguedad ID #REQUIRED>
+<!ATTLIST Piloto Titular ID #REQUIRED>
+<!ELEMENT Coche (VelocidadMax, Aceleracion?)>
+<!ELEMENT Mecanico (#PCDATA)>
+<!ELEMENT Piloto (#PCDATA)>
+<!ELEMENT Coche (#PCDATA)>
+<!ELEMENT FechaFundacion (#PCDATA)>
+<!ELEMENT AnoFundacion (#PCDATA)>
+<!ELEMENT VelocidadMax (#PCDATA)>
+<!ELEMENT Aceleracion (#PCDATA)>
