@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="FormulaX" type="tFormulaX" />
+	<xs:complexType name="tFormulaX">
+		<xs:sequence>
+			<xs:element name="Escuderias" type="tEscuderias" minOccurs="1" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tEscuderias">
+		<xs:sequence>
+			<xs:element name="Escuderia" type="tEscuderia" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tEscuderia">
+		<xs:all>
+			<xs:element name="JefeEscuderia" type="tJefeEscuderia" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Mecanico1" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Mecanico2" type="xs:string" minOccurs="0" maxOccurs="1" />
+			<xs:element name="Piloto1" type="tPiloto" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Piloto2" type="tPiloto" minOccurs="0" maxOccurs="1" />
+			<xs:element name="Coche" type="tCoche" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Fundacion" type="tFundacion" minOccurs="1" maxOccurs="1" />
+		</xs:all>
+		<xs:attribute name="NomEscu" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="tJefeEscuderia">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="Antiguedad" type="xs:string" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="tPiloto">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="Titular" type="tTitular" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="tCoche">
+		<xs:sequence>
+			<xs:element name="VelocidadMax" type="tVeloMax" minOccurs="1" maxOccurs="1" />
+			<xs:element name="Aceleracion" type="tAceleracion" minOccurs="0" maxOccurs="1" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tFundacion">
+		<xs:choice>
+			<xs:element name="FechaFundacion" type="xs:date" />
+			<xs:element name="AnoFundacion" type="xs:string" />
+		</xs:choice>
+	</xs:complexType>
+
+	<xs:simpleType name="tTitular">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Si" />
+			<xs:enumeration value="No" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="tVeloMax">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{3}(.)[0-9]{2,3}( )(km/h)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="tAceleracion">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9]{2,4}(,)[0-9]{2}( )(m/s2|cm/s2)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

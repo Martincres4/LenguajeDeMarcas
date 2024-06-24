@@ -1,3 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:complexType name="FormulaX">
+    <xs:sequence>
+        <xs:element name="Escuderias" type="tEscuderias" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tEscuderias">
+    <xs:sequence>
+        <xs:element name="Escuderia" type="tEscuderia" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tEscuderia">
+    <xs:all>
+        <xs:element name="JefeEscuderia"></xs:element>
+        <xs:element name="Mecanico1" minOccurs="1" maxOccurs="1" type="tMecanico1"/>
+        <xs:element name="Mecanico2" minOccurs="0" maxOccurs="1" type="tMecanico2"/>
+        <xs:element name="Piloto1" minOccurs="1" maxOccurs="1" type="tPiloto1"/>
+        <xs:element name="Piloto2" minOccurs="0" maxOccurs="1" type="tPiloto2"/>
+        <xs:element name="Coche" minOccurs="1" maxOccurs="1" type="tCoche"/>
+        <xs:element name="Fundacion" minOccurs="1" maxOccurs="1" type="tFundacion"/>     
+    </xs:all>
+</xs:complexType>
+
+<xs:simpleType name="tJefeEscuderia">
+    >
+
+</xs:simpleType>
 </xs:schema>
